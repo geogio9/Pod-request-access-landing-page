@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121725;
+    position: relative;
+}
+
+.mob_img {
+    position: absolute;
+    filter: brightness(40%);
+}
+
+.tab_img {
+    display: none;
+}
+
+.desk_img {
+    display: none;
+}
+
+.container {
+    position: relative;
+    width: 375px;
+    padding: 20px 20px;
+    z-index: 1;
+
+}
+
+.logo {
+    margin: 50px 0;
+    margin-left: 110px;
+}
+
+
+/************************* heder ********************/
+
+
+.heder_title {
+    font-weight: 100;
+    font-size: 1.65rem;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #54E6AF;
+}
+
+span {
+    color: white;
+}
+
+.heder_text {
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 25px;
+    color: #C2CBE5;
+    text-align: center;
+    /* margin-top: 16px; */
+}
+
+
+/* main */
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.spotify {
+    width: 56px;
+}
+
+.apple {
+    width: 50px;
+}
+
+.google {
+    width: 100px;
+}
+
+.pocket {
+    width: 65px;
+}
+
+.search {
+    display: grid;
+    margin-top: 40px;
+}
+
+.email {
+    width: 100%;
+    max-width: 295px;
+    padding: 10px;
+    padding-left: 25px;
+    margin-left: 20px;
+    margin-bottom: 16px;
+
+    border: none;
+    border-radius: 30px;
+    line-height: 28px;
+
+    color: white;
+    background-color: #2C344B;
+}
+
+.error {
+    color: red;
+    margin: -10px 0 10px 37px;
+
+    display: none;
+}
+
+.btn {
+    width: 100%;
+    max-width: 295px;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+
+    line-height: 28px;
+    font-size: 0.93rem;
+    font-weight: 600;
+
+    background-color: #54E6AF;
+    color: #121725;
+}
+
+.footer {
+    display: none;
+}
+
+/***************************** responsive  ************************/
+
+@media (min-width: 768px) {
+
+    .mob_img {
+        display: none;
+    }
+
+    .tab_img {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .container {
+        width: 768px;
+        margin-left: 40px;
+        padding: 0;
+    }
+
+    .container_inner {
+        margin-top: 80px;
+        padding: 50px 30px 50px 0;
+        width: 600px;
+        background: #121725;
+    }
+
+    .logo {
+        margin: 0;
+        margin-top: 130px;
+    }
+
+    .heder {
+
+        width: 600px;
+    }
+
+    .heder_title {
+        text-align: left;
+        font-size: 2.667rem;
+        line-height: 56px;
+        letter-spacing: 3px;
+    }
+
+    .heder_text {
+        text-align: left;
+        margin-top: 31px;
+        width: 70.2%;
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .social {
+        margin-top: 50px;
+    }
+
+    .spotify {
+        width: 100px;
+    }
+
+    .apple {
+        width: 70px;
+    }
+
+    .google {
+        width: 130px;
+    }
+
+    .pocket {
+        width: 100px;
+    }
+
+    .search {
+        position: relative;
+    }
+
+    .email {
+        max-width: 366px;
+        height: 50px;
+    }
+
+    .btn {
+        position: absolute;
+        right: 185px;
+        top: 1px;
+        width: 180px;
+    }
+
+    .footer {
+        display: block;
+        position: relative;
+        background: #121725;
+        width: 728px;
+        height: 149px;
+    }
+
+    .footer_logo {
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
+
+@media (min-width: 1440px) {
+
+    body {
+        justify-content: start;
+    }
+
+    .tab_img {
+        display: none;
+    }
+
+    .desk_img {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .container {
+        margin: 0 165px;
+    }
+
+    .container_inner{
+        width: 900px;
+    }
+
+    .email{
+        margin-left: 0;
+        max-width: 400px;
+    }
+
+    .btn {
+        right: 472px;
+        width: 209px;
+    }
+
+    .spotify {
+        width: 100px;
+    }
+
+    .apple {
+        width: 80px;
+    }
+
+    .google {
+        width: 130px;
+    }
+
+    .pocket {
+        width: 130px;
+    }
+
+    .search {
+        position: relative;
+    }
+
+    .footer{
+        width: 1418px;
+    }
+
+    .footer_logo{
+        right: 0;
+        bottom: 100px;
+    }
+}
